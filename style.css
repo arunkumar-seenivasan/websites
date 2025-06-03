@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Tilt Neon';
+
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(4, 13, 139));
+  background-size: 1700px;
+  background-position: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  background: transparent;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 0 30px rgba(0,0,0, .5) ;
+
+}
+h1 {
+  font-size: 2.3em;
+  color:#fff;
+  user-select: none;
+  
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  bottom: -6px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform .3s;
+
+}
+.navigation a:hover::after {
+  transform: scaleX(1);
+}
+.navigation .btnregister {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.navigation .btnregister:hover {
+  background: #fff;
+  color: #162938;
+}
+
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 100px;
+    
+}
+.video {
+    width: 30%;
+    margin: 1%;
+}
+
+
+
+
+
+
+#videoUploadForm {
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+#videoFile {
+  color: #fff;
+  border-radius: 5px;
+}
+
+#videoUploadForm input[type="submit"] {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#videoUploadForm input[type="submit"]:hover {
+  background-color: #258cd1;
+}
+
+#uploadStatus {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  color: #fff;
+  border-radius: 50px;
+  padding: 30px 40px;
+  margin-top: 100px;
+  background-position: bottom;
+  box-shadow: 0 0 30px rgba(0,0,0, .5) ;
+  overflow: hidden; 
+  transform: translateX(0);
+  transition: height .2s ease;
+}
+
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  color: #fff;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.wrapper h1 {
+  font-size: 35px;
+  text-align: center;
+}
+.wrapper .input-box {
+  position: relative;
+  width: 100%px;
+  height: 50%;
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 50%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255,255,255, .5);
+  border-radius: 40px;
+  font-size: 18px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+  color: #fff;
+}
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.wrapper .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: -16px 0 16px;
+}
+.remember-forget label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.wrapper .button {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0, .5);
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+
+}
+.wrapper .register-link {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px ;
+}
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.contact-card {
+    background-color: transparent;
+    text-align: center;
+}
+
+.contact-card img {
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.contact-card h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.contact-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.contact-info {
+    font-size: larger;
+}
+
+.logo {
+    font-size: 2.5em;
+}
